@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="../style/learnFR.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <h1>CSS Bases</h1>
+        <p class="intro">
+          Cette page contient des exemples visuels pour margin, padding, width,
+          height, display, background, pseudo-classes et pseudo-éléments. Chaque
+          exemple est coloré et commenté pour vous aider à comprendre comment
+          fonctionnent les propriétés CSS.
+        </p>
+      </section>
+
+      <!-- SECTION 1 : margin -->
+      <section>
+        <h2>1. Margin (espace à l'extérieur d'un élément)</h2>
+        <p>
+          <strong>Margin</strong> crée de l'espace <em>en dehors</em> de
+          l'élément. Il pousse les autres éléments autour. Pensez-y comme
+          l'espace personnel de l'élément !
+        </p>
+
+        <!-- Exemple 1 : margin sur les 4 côtés -->
+        <div class="margin-all">
+          <strong>Margin sur tous les côtés (30px)</strong><br />
+          Cet élément a une marge de 30px sur chaque côté.
+        </div>
+
+        <!-- Exemple 2 : margin différente par côté -->
+        <div class="margin-different">
+          <strong>Margin différente par côté</strong><br />
+          Haut: 10px | Droite: 40px | Bas: 30px | Gauche: 40px
+        </div>
+
+        <!-- Exemple 3 : margin inline (horizontal) -->
+        <div class="margin-inline">
+          <strong>Margin Inline (50px)</strong><br />
+          Crée 50px de marge à gauche et à droite.
+        </div>
+
+        <!-- Exemple 4 : margin block (vertical) -->
+        <div class="margin-block">
+          <strong>Margin Block (40px)</strong><br />
+          Crée 40px de marge en haut et en bas.
+        </div>
+      </section>
+
+      <!-- SECTION 2 : padding -->
+      <section>
+        <h2>2. Padding (espace à l'intérieur d'un élément)</h2>
+        <p>
+          <strong>Padding</strong> crée de l'espace <em>à l'intérieur</em> de
+          l'élément, entre le contenu et la bordure. Cela rend l'élément plus
+          grand et donne de la place au texte.
+        </p>
+
+        <!-- Exemple 1 : padding égal sur tous les côtés -->
+        <div class="padding-all">
+          <strong>Padding sur tous les côtés (30px)</strong>
+        </div>
+
+        <!-- Exemple 2 : padding différent par côté -->
+        <div class="padding-different">
+          <strong>Padding différent par côté</strong><br />
+          Haut: 10px | Droite: 40px | Bas: 30px | Gauche: 40px
+        </div>
+
+        <!-- Exemple 3 : padding inline -->
+        <div class="padding-inline">
+          <strong>Padding Inline (60px)</strong><br />
+          60px d'espace interne à gauche et à droite.
+        </div>
+
+        <!-- Exemple 4 : padding block -->
+        <div class="padding-block">
+          <strong>Padding Block (50px)</strong><br />
+          50px d'espace interne en haut et en bas.
+        </div>
+      </section>
+
+      <!-- SECTION 3 : width & height -->
+      <section>
+        <h2>3. Width & Height</h2>
+        <p>
+          <strong>Width</strong> et <strong>Height</strong> définissent la
+          taille d'un élément. Fonctionne sur les éléments block et
+          inline-block.
+        </p>
+
+        <div class="size-box">
+          <strong>Fixed Size Box</strong><br />
+          200px width <br />
+          100px height
+        </div>
+      </section>
+
+      <!-- SECTION 4 : border -->
+      <section>
+        <h2>4. Bordures</h2>
+        <p>
+          <strong>Borders</strong> créent des lignes autour des éléments. Vous
+          pouvez définir l'épaisseur, le style et la couleur. La bordure est
+          entre le margin et le padding.
+        </p>
+
+        <div class="border-solid">
+          <strong>Bordure solide</strong> 2px noire
+        </div>
+
+        <div class="border-dotted">
+          <strong>Bordure pointillée</strong> 3px rouge
+        </div>
+
+        <div class="border-rounded">
+          <strong>Bordure arrondie</strong> 2px bleue avec 15px border-radius
+        </div>
+      </section>
+
+      <!-- SECTION 5 : display -->
+      <section>
+        <h2>5. Display</h2>
+        <p>
+          La propriété <strong>display</strong> détermine comment un élément se
+          comporte dans le layout.
+        </p>
+
+        <!-- Inline -->
+        <h3>Inline</h3>
+        <span class="inline">Inline 1</span>
+        <span class="inline">Inline 2</span>
+        <span class="inline">Inline 3</span>
+
+        <!-- Inline-block -->
+        <h3>Inline-block</h3>
+        <div class="inline-block"><p>Box 1</p></div>
+        <div class="inline-block"><p>Box 2</p></div>
+        <div class="inline-block"><p>Box 3</p></div>
+
+        <!-- Block -->
+        <h3>Block</h3>
+        <div class="block">
+          <p>Élément block prend toute la largeur disponible</p>
+        </div>
+      </section>
+
+      <!-- SECTION 6 : BACKGROUND -->
+      <section>
+        <h2>6. Background Image</h2>
+        <div class="background-box"></div>
+      </section>
+
+      <!-- SECTION 7 : PSEUDO-ELEMENTS -->
+      <section>
+        <h2>7. Pseudo-éléments</h2>
+        <p class="pseudo-text">
+          first letter et first line permettent de cibler des parties
+          spécifiques du texte sans ajouter de HTML supplémentaire.
+        </p>
+      </section>
+
+      <!-- SECTION 8 : PSEUDO-CLASSES -->
+      <section>
+        <h2>8. Pseudo-classes</h2>
+        <p>
+          Les pseudo-classes (:hover, :focus, :active) changent l'apparence
+          selon l'état de l'élément ou l'interaction utilisateur.
+        </p>
+
+        <p>
+          <input
+            type="text"
+            id="demo-input"
+            placeholder="Clique ici pour voir le focus"
+          />
+        </p>
+
+        <p>
+          <button>Survole puis clique moi!</button>
+        </p>
+      </section>
+
+      <!-- SECTION 9 : LIST SELECTORS -->
+      <section>
+        <h2>9. Sélecteurs de liste</h2>
+        <ul>
+          <li>Premier item : vert et gras (:first-child)</li>
+          <li>Deuxième item : rouge et italique (:nth-child(2))</li>
+          <li>Dernier item : violet et souligné (:last-child)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Le meilleur moyen d'apprendre CSS est de l'essayer vous-même !</h3>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="fr"> <!-- lang="fr" indique aux navigateurs que la page est en français -->
+<head>
+    <!-- Tout ce qui est dans la section head est une information sur notre page, pas du contenu qui s'affiche -->
+    <meta charset="UTF-8"> <!-- Ceci assure que les caractères spéciaux s'affichent correctement (comme les emojis, les accents etc...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site web responsive sur les appareils mobiles -->
+    <title>Document d'apprentissage HTML</title> <!-- C'est ce qui s'affiche dans l'onglet du navigateur en haut "LE TITRE" -->
+  <link rel="stylesheet" href="../style/style.css"> <!-- Lien vers notre fichier CSS pour le style -->
+</head>
+<body>
+    <!-- Tout ce qui est visible sur votre page web va à l'intérieur de la balise body -->
+    
+    <!-- HEADER : C'est ici que vont votre logo et votre menu de navigation -->
+    <header>
+        <nav> <!-- La balise nav est spécifiquement pour les menus de navigation -->
+            <ul> <!-- Rappelez-vous ul crée une liste non ordonnée -->
+                <li><a href="#description">accueil</a></li> <!-- Le # signifie qu'il saute vers un élément avec id="description" sur la même page -->
+                <li><a href="/html2/test.html" target="_blank">autre page</a></li> <!-- target="_blank" ouvre le lien dans un nouvel onglet, le chemin dépend de votre structure de répertoires : utilisez ../ pour revenir en arrière et / pour aller plus profond  -->
+                <li><a href="https://www.google.com">google it</a></li> <!-- Lien externe vers Google -->
+            </ul>
+        </nav>
+    </header>   
+    
+    <!-- CONTENU PRINCIPAL : Tout le contenu principal de votre page doit être enveloppé dans la balise main -->
+    <main>
+        <!-- SECTION 1 -->
+        <section>
+             <h3>test</h3>
+            <h2>Exemples de formatage de texte</h2> <!-- h2 est un sous-titre, rappelez-vous la hiérarchie : h1, h2, h3 etc... -->
+            <p>
+                Ceci est une <span style="color: red;">importante</span> <b>note</b> note
+                <!-- span est comme un mini-conteneur pour styliser juste quelques mots -->
+                <!-- b met le texte en gras -->
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus amet dolorem ab, 
+                <br/> <!-- br est un saut de ligne - c'est comme appuyer sur Entrée dans votre texte -->
+                atque tenetur saepe adipisci fugiat repellendus deserunt, iure quaerat magnam distinctio officiis reprehenderit? Culpa quo mollitia enim dignissimos!
+            </p>
+            
+            <hr/> <!-- hr dessine une ligne horizontale à travers la page -->
+            <p>
+                H<sub>2</sub>O <!-- sub met le texte en dessous de la ligne -->
+                x<sup>2</sup> <!-- sup met le texte au-dessus de la ligne -->
+            </p> 
+            
+            <!-- La balise pre garde TOUS vos espaces et sauts de ligne exactement comme vous les tapez -->
+            <pre>
+       Ligne 1
+ Ligne 2
+            Ligne 3
+            </pre>
+            <!-- Maintenant regardons quelques balises de texte sémantiques -->
+            <strong>Texte important</strong> <br/> <!-- strong est pour le contenu important -->
+            <i>Texte italique</i> <br/> <!-- i met simplement le texte en italique/penché -->
+            <em>Texte avec emphase</em> <br/> <!-- em signifie que le texte est accentué - il a l'air italique mais a une signification sémantique -->
+            <mark>Texte surligné</mark> <br/> <!-- mark est comme utiliser un surligneur, donne un fond jaune -->
+            <del>Texte supprimé</del> <!-- del montre le texte qui a été retiré/barré -->
+        </section>
+        
+        <!-- SECTION 2 : Maintenant travaillons avec les images, l'audio, la vidéo et les conteneurs ! -->
+        <section id="description"> <!-- Vous vous souvenez de cet id ? Notre lien "accueil" saute ici ! -->
+            <h2>Média et Conteneurs</h2>
+           
+            
+            <!-- div est notre conteneur le plus courant, c'est une "division" ou section de contenu -->
+            <div> <!-- Utilisez les divs pour regrouper du contenu lié (rappelez-vous qu'on a besoin d'un bon regroupement pour le style plus tard avec CSS) -->
+                <p>Bonjour, ceci est la div numéro 1</p>
+            </div>
+            
+            <div>
+                <p>Bonjour, ceci est la div numéro 2</p>
+            </div>
+
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Image Trulli">
+            <!-- src est l'endroit où se trouve l'image (peut être une URL ou un chemin de fichier) -->
+            <!-- alt est super important, c'est le texte alternatif qui décrit l'image pour les personnes qui ne peuvent pas la voir (accessibilité !) -->
+            
+
+            <audio controls src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                <!-- controls nous donne les boutons play/pause, sans ça il n'y a aucun moyen de contrôler l'audio -->
+                <!-- src est le chemin vers votre fichier audio -->
+                Votre navigateur ne supporte pas l'élément audio. <!-- Ce texte s'affiche seulement si le navigateur ne peut pas lire l'audio -->
+            </audio>
+            
+            <video controls autoplay muted>
+                <!-- controls montre les boutons play/pause/volume -->
+                <!-- autoplay fait démarrer la vidéo automatiquement -->
+                <!-- muted démarre sans son, les navigateurs exigent ceci si vous voulez que autoplay fonctionne -->
+                <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+                <!-- La balise source spécifie le fichier vidéo et son type -->
+                Votre navigateur ne supporte pas la vidéo. <!-- Ce texte s'affiche seulement si le navigateur ne supporte pas l'élément vidéo -->
+            </video>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

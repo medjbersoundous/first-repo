@@ -1,0 +1,192 @@
+/* Import the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0; /* Remove default space added by the browser */
+  padding: 0; /* Remove default internal space of the page */
+  font-family: "Poppins"; /* Apply the Poppins font */
+  background-color: #f2f2f2;
+}
+
+.intro {
+  text-align: center; /* Center the text horizontally */
+  margin-bottom: 40px; /* Space below the paragraph */
+}
+
+.margin-all {
+  background-color: lightblue;
+  margin: 30px; /* Space OUTSIDE the element on all 4 sides */
+  padding: 10px; /* Space INSIDE the element  on all sides*/
+}
+.margin-different {
+  background-color: lightgreen;
+  margin-top: 10px; /* Space above the element */
+  margin-right: 40px; /* Space on the right */
+  margin-bottom: 30px; /* Space below */
+  margin-left: 40px; /* Space on the left */
+  padding: 10px; /* Internal space so text doesn’t touch borders */
+}
+.margin-inline {
+  background-color: lightyellow; /* Background to show margin */
+  margin-inline: 50px; /* Space on the left and right */
+  padding: 10px; 
+}
+.margin-block {
+  background-color: lightpink; /* Background to show margin */
+  margin-block: 40px; /* Space on the top and bottom */
+  padding: 10px; 
+}
+
+.padding-all {
+  background-color: lightcoral;
+  padding: 30px; /* Space INSIDE the element on all sides */
+  margin: 20px; /* Space OUTSIDE the element on all sides*/
+}
+
+.padding-different {
+  background-color: lightskyblue;
+  padding-top: 10px; /* Space inside at the top */
+  padding-right: 40px; /* Space inside on the right */
+  padding-bottom: 30px; /* Space inside at the bottom */
+  padding-left: 40px; /* Space inside on the left */
+  margin: 20px; /* External space on all sides*/
+}
+.padding-inline {
+  background-color: lightyellow;
+  padding-inline: 60px; /* Space inside on the left and right */
+  margin: 20px;
+}
+.padding-block {
+  background-color: lightpink; 
+  padding-block: 50px; /* Space inside on the top and bottom */
+  margin: 20px;
+}
+
+.size-box {
+  width: 200px; /* Horizontal size of the element */
+  height: 100px; /* Vertical size of the element */
+  background-color: orange; 
+  text-align: center; /* Center text horizontally */
+  margin: 20px; 
+}
+.border-solid {
+  border: 2px solid black; /* Border thickness 2px, style and color */
+  margin: 10px; 
+  padding: 10px; 
+}
+
+.border-dotted {
+  border: 3px dotted red; /* height 3px and Dotted border with red color  */
+  margin: 10px;
+  padding: 10px;
+}
+
+.border-rounded {
+  border: 2px solid blue; /* border height 2px with color blue */
+  border-radius: 15px; /* Rounded corners */
+  margin: 10px; 
+  padding: 10px;
+}
+.inline {
+  display: inline; /* Element stays in the same line */
+  background-color: yellow; 
+  padding: 5px; /* Padding works, but width/height don’t */
+}
+
+.inline-block {
+  display: inline-block; /* Same line but width and height work */
+  width: 100px; /* Width now works */
+  height: 50px; /* Height now works */
+  background-color: lightgreen; 
+  text-align: center; /* Center text horizontally */
+}
+
+
+.block {
+  display: block; /* Takes full width, starts on new line */
+  background-color: lightgray; /* make background color lightgray  */
+  padding: 10px;
+  margin: 10px;
+}
+.background-box {
+  width: 300px; /* Box width */
+  height: 150px; /* Box height */
+  background-image: url("../img.png"); /* Image used as background */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Fill the box */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  border: 2px solid black; /* Border around the box */
+  margin: 20px;
+}
+
+.pseudo-text::first-letter {
+  font-size: 30px; /* Make the first letter bigger */
+  color: red; /* Change first letter color */
+}
+
+.pseudo-text::first-line {
+  font-weight: bold; /* Make only the first line bold */
+}
+
+::selection {
+  background-color: yellow; /* Backgroundcolor yellow when text is selected */
+  color: black; /* Text color when selected */
+}
+
+input::placeholder {
+  color: gray; /* Placeholder text color */
+}
+
+input:focus {
+  border: 2px solid blue; /* Border when input is focused */
+}
+#demo-input {
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+}
+button {
+  background-color: orange; /* Default button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Top/bottom and left/right padding */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+button:hover {
+  background-color: blue; /* Color when mouse is over the button */
+}
+
+button:active {
+  background-color: red; /* Color when button is clicked */
+}
+li:first-child {
+  color: green; /* Style only the first list item */
+  font-weight: bold; /* Make the first item bold */
+}
+
+li:nth-child(2) {
+  color: red; /* Style only the second list item */
+  font-style: italic; /* Make the second item italic */
+}
+li:last-child {
+  color: purple; /* Style only the last list item */
+  text-decoration: underline; /* Underline the last item */
+}
+
+footer h3 {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.inline-table {
+  display: inline-table;
+  border: 2px solid darkblue;
+  margin-right: 10px;
+  border-collapse: collapse;
+}
+
+.inline-table td {
+  border: 1px solid black;
+  padding: 10px;
+}

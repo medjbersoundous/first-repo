@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+NZ+Basic+Guides&display=swap');
+body{
+    background-color: lightgrey;
+    color: black;
+}
+
+.iframe {
+   background-color: mediumblue;
+}
+#video-title{
+    color:purple;
+}
+/* h3 {
+    color:red;
+    font-size: 40px;
+    background-color: lightblue;
+} */
+#iframe-section {
+    background-color: lightgreen;
+    font-family:"Playwrite NZ Basic Guides";
+}
+div ~ h2 {
+    background-color: red;
+    color:black
+}

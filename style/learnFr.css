@@ -1,0 +1,190 @@
+/* Importation de la police Poppins depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0; /* Supprime l'espace par défaut autour du body */
+  padding: 0; /* Supprime l'espace interne par défaut */
+  font-family: "Poppins"; /* Applique la police Poppins */
+  background-color: #f2f2f2;
+}
+
+.intro {
+  text-align: center; /* Centrer le texte horizontalement */
+  margin-bottom: 40px; /* Espace sous le paragraphe */
+}
+.margin-all {
+  background-color: lightblue;
+  margin: 30px; /* Espace extérieur sur les 4 côtés */
+  padding: 10px; /* Espace intérieur sur les 4 côtés*/
+}
+
+.margin-different {
+  background-color: lightgreen;
+  margin-top: 10px; /* Haut */
+  margin-right: 40px; /* Droite */
+  margin-bottom: 30px; /* Bas */
+  margin-left: 40px; /* Gauche */
+  padding: 10px;
+}
+
+.margin-inline {
+  background-color: lightyellow;
+  margin-inline: 50px; /* Espace horizontal (gauche & droite) */
+  padding: 10px;
+}
+
+.margin-block {
+  background-color: lightpink;
+  margin-block: 40px; /* Espace vertical (haut & bas) */
+  padding: 10px;
+}
+
+.padding-all {
+  background-color: lightcoral;
+  padding: 30px; /* Espace intérieur sur tous les côtés */
+  margin: 20px;
+}
+
+.padding-different {
+  background-color: lightskyblue;
+  padding-top: 10px; /* Haut */
+  padding-right: 40px; /* Droite */
+  padding-bottom: 30px; /* Bas */
+  padding-left: 40px; /* Gauche */
+  margin: 20px;
+}
+
+.padding-inline {
+  background-color: lightyellow;
+  padding-inline: 60px; /* Espace intérieur horizontal */
+  margin: 20px;
+}
+
+.padding-block {
+  background-color: lightpink;
+  padding-block: 50px; /* Espace intérieur vertical */
+  margin: 20px;
+}
+
+.size-box {
+  width: 200px; /* Largeur */
+  height: 100px; /* Hauteur */
+  background-color: orange;
+  text-align: center; /* Centrer le texte horizontalement */
+  margin: 20px;
+}
+.border-solid {
+  border: 2px solid black; /* Bordure solide de 2px, noire */
+  margin: 10px;
+  padding: 10px;
+}
+
+.border-dotted {
+  border: 3px dotted red; /* Bordure pointillée rouge de 3px */
+  margin: 10px;
+  padding: 10px;
+}
+
+.border-rounded {
+  border: 2px solid blue;
+  border-radius: 15px; /* Coins arrondis */
+  margin: 10px;
+  padding: 10px;
+}
+
+.inline {
+  display: inline; /* Reste sur la même ligne, width/height ignorés */
+  background-color: yellow;
+  padding: 5px;
+}
+
+.inline-block {
+  display: inline-block; /* Même ligne mais width/height fonctionnent */
+  width: 100px;
+  height: 50px;
+  background-color: lightgreen;
+  text-align: center;
+  margin: 10px;
+}
+.block {
+  display: block; /* Prend toute la largeur disponible */
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+}
+.background-box {
+  width: 300px;
+  height: 150px;
+  background-image: url("../img.png"); /* Image de fond */
+  background-position: center; /* Centre l'image */
+  background-size: cover; /* Remplit le bloc comme fond d'ecran */
+  background-repeat: no-repeat; /* Pas de répétition */
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.pseudo-text::first-letter {
+  font-size: 30px; /* Première lettre plus grande */
+  color: red;
+}
+
+.pseudo-text::first-line {
+  font-weight: bold; /* Première ligne en gras */
+}
+
+::selection {
+  background-color: yellow; /* Surbrillance du texte sélectionné */
+  color: black;
+}
+
+
+input::placeholder {
+  color: gray; /* Couleur du placeholder */
+}
+
+input:focus {
+  border: 2px solid blue; /* Bordure de 2px et style solid blue lors du focus */
+}
+
+#demo-input {
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue; /* Changement lors du survol */
+}
+
+button:active {
+  background-color: red; /* Changement lors du clic */
+}
+
+li:first-child {  /* Premier item vert et gras */
+  color: green;
+  font-weight: bold;
+}
+
+li:nth-child(2) {  /* Deuxième item rouge et italique */
+  color: red;
+  font-style: italic;
+}
+
+li:last-child { /* Dernier item violet et souligné */
+  color: purple; 
+  text-decoration: underline;
+}
+footer h3 {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}

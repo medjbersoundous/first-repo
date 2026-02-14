@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: red;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+}
+
+p {
+  color: lightblue;
+  font-size: 18px;
+  background-image: url("../img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 20px;
+}
+
+p::first-letter {
+  font-size: 30px;
+  color: red;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+::selection {
+  background-color: yellow;
+}
+
+input::placeholder {
+  color: firebrick;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+button {
+  background-color: orange;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button:active {
+  background-color: red;
+}
+
+ul li:nth-child(2) {
+  color: green;
+}
+ul li:nth-child(3) {
+  color: blue;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.inline {
+  display: inline;
+  background-color: lightblue;
+  padding: 10px; 
+  margin-right: 5px;
+}
+
+/* Inline-block */
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: lightgreen;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Inline-flex */
+.inline-flex {
+  display: inline-flex;
+  background-color: lightcoral;
+  padding: 10px;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.inline-flex div {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Inline-table */
+.inline-table {
+  display: inline-table;
+  border: 2px solid darkblue;
+  margin-right: 10px;
+  border-collapse: collapse;
+}
+
+.inline-table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+--------------------------
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="../style/learn.css" />
+  </head>
+  <body>
+    <!-- <section>
+
+    <h1>CSS Basics</h1>
+    <hr>
+  
+    <h2>Form Example</h2>
+  
+    <p>
+      This paragraph demonstrates pseudo-elements, background properties,
+      and spacing concepts.
+    </p>
+  
+    <form>
+      <label for="name">Nom</label><br>
+      <input type="text" id="name" placeholder="Entrez votre nom"><br><br>
+  
+      <label for="date">Date</label><br>
+      <input type="date" id="date"><br><br>
+  
+      <button>Click</button>
+    </form>
+  
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+</section> -->
+    <!-- <section>
+      <h1>Flexbox Example</h1>
+
+      <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+      </div>
+    </section> -->
+    <section>
+      <h1>Inline Display Types</h1>
+
+      <h2>1. Inline</h2>
+      <span class="inline">Item 1</span>
+      <span class="inline">Item 2</span>
+      <span class="inline">Item 3</span>
+
+      <h2>2. Inline-block</h2>
+      <div class="inline-block">Box 1</div>
+      <div class="inline-block">Box 2</div>
+      <div class="inline-block">Box 3</div>
+
+      <h2>3. Inline-flex</h2>
+      <div class="inline-flex">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+      </div>
+
+      <h2>4. Inline-table</h2>
+      <table class="inline-table">
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+      </table>
+      <table class="inline-table">
+        <tr>
+          <td>Cell A</td>
+          <td>Cell B</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
+

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Complete Basics</title>
+    <link rel="stylesheet" href="../style/learn.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>CSS Basics</h1>
+        <p class="intro">
+          This page contains visual examples for margin, padding, width, height,
+          display, background, pseudo-classes and pseudo-elements. Each example
+          is color-coded and commented to help you understand how CSS properties
+          work.
+        </p>
+      </section>
+
+      <!-- SECTION 1: margin - demonstrates spacing outside elements -->
+      <section>
+        <h2>1. Margin (space OUTSIDE an element)</h2>
+        <p>
+          <strong>Margin</strong> creates space <em>outside</em> the element's
+          border. It pushes other elements away. Think of it as the element's
+          personal space!
+        </p>
+
+        <!-- Example 1: Same margin value on all sides -->
+        <div class="margin-all">
+          <strong>Margin on all sides (30px)</strong><br />
+          This box has equal 30px margin on all four sides.
+        </div>
+
+        <!-- Example 2: Different margin value for each side -->
+        <div class="margin-different">
+          <strong>Different margins per side</strong><br />
+          Top: 10px | Right: 40px | Bottom: 30px | Left: 40px
+        </div>
+
+        <!-- Example 3: Margin Inline (horizontal spacing) -->
+        <div class="margin-inline">
+          <strong>Margin Inline (50px)</strong><br />
+          This creates 50px margin on the LEFT and RIGHT sides.
+        </div>
+
+        <!-- Example 4: Margin Block (vertical spacing) -->
+        <div class="margin-block">
+          <strong>Margin Block (40px)</strong><br />
+          This creates 40px margin on the TOP and BOTTOM sides.
+        </div>
+      </section>
+
+      <!-- SECTION 2: padding - demonstrates spacing inside elements -->
+      <section>
+        <h2>2. Padding (space INSIDE an element)</h2>
+        <p>
+          <strong>Padding</strong> creates space <em>inside</em> the element,
+          between the content and the border. It makes the element bigger and
+          gives content breathing room.
+        </p>
+
+        <!-- Example 1: same padding value on all sides -->
+        <div class="padding-all">
+          <strong>Padding on all sides (30px)</strong>
+        </div>
+
+        <!-- Example 2: different padding value for each side -->
+        <div class="padding-different">
+          <strong>Different padding per side</strong><br />
+          Top: 10px | Right: 40px | Bottom: 30px | Left: 40px
+        </div>
+
+        <!-- Example 3: padding inline (horizontal internal spacing) -->
+        <div class="padding-inline">
+          <strong>Padding Inline (60px)</strong><br />
+          This adds 60px of internal space on the LEFT and RIGHT.<br />
+        </div>
+
+        <!-- Example 4: padding block (vertical internal spacing) -->
+        <div class="padding-block">
+          <strong>Padding Block (50px)</strong><br />
+          This adds 50px of internal space on the TOP and BOTTOM.
+        </div>
+      </section>
+
+      <!-- SECTION 3: width & height -->
+      <section>
+        <h2>3. Width & Height</h2>
+        <p>
+          <strong>Width</strong> and <strong>height</strong> control the size of
+          an element. These properties work on block-level and inline-block
+          elements.
+        </p>
+
+        <div class="size-box">
+          <strong>Fixed Size Box</strong><br />
+          200px width <br />
+          100px height
+        </div>
+      </section>
+
+      <!-- SECTION 4: border -->
+      <section>
+        <h2>4. Border</h2>
+        <p>
+          <strong>Borders</strong> create lines around elements. You can control
+          their width, style, and color. Borders go between margin and padding.
+        </p>
+
+        <!-- solid border example -->
+        <div class="border-solid">
+          <strong>Solid Border</strong> 2px thick, black color<br />
+          Most commonly used border style
+        </div>
+
+        <!-- dotted border example -->
+        <div class="border-dotted">
+          <strong>Dotted Border</strong> 3px thick, red color<br />
+          Creates a series of dots around the element
+        </div>
+
+        <!-- rounded border example -->
+        <div class="border-rounded">
+          <strong>Rounded Border</strong> 2px solid blue with 15px
+          border-radius<br />
+          Rounded corners make designs look modern and friendly
+        </div>
+      </section>
+
+      <!-- SECTION 5: display : inline & block -->
+      <section>
+        <h2>5. Display</h2>
+        <p>
+          The <strong>display</strong> property determines how an element
+          behaves in the layout. It's one of the most important CSS properties!
+        </p>
+
+        <!-- Inline Display -->
+        <h3>Inline Display</h3>
+        <p>
+          Elements stay on the same line. Width and height don't work here.
+          Examples: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;
+        </p>
+        <span class="inline">Inline 1</span>
+        <span class="inline">Inline 2</span>
+        <span class="inline">Inline 3</span>
+
+        <!-- Inline-block Display -->
+        <h3>Inline-block Display</h3>
+        <p>stays in line BUT respects width and height.</p>
+        <div class="inline-block"><p>Box 1</p></div>
+        <div class="inline-block"><p>Box2</p></div>
+        <div class="inline-block"><p>Box3</p></div>
+
+        <!-- Block Display -->
+        <h3>Block Display</h3>
+        <p>
+          Takes full available width and starts on a new line. Examples:
+          &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;
+        </p>
+        <div class="block">
+          <p>Block element, Notice it takes the full width</p>
+        </div>
+        <div class="block">
+          <p>Another block element, Each one is on its own line</p>
+        </div>
+      </section>
+
+      <!-- SECTION 6: background -->
+      <section>
+        <h2>6. Background Image</h2>
+        <p>
+          <strong>Background images</strong> can be added to any element. CSS
+          gives you precise control over positioning, sizing, and repetition.
+        </p>
+
+        <div class="background-box">
+          <!-- background image is applied via CSS -->
+        </div>
+        <p>
+          <small>
+            Note: Make sure your image path is correct relative to your CSS
+            file!
+          </small>
+        </p>
+      </section>
+
+      <!-- SECTION 7: pseudo-elements-->
+      <section>
+        <h2>7. Pseudo-elements</h2>
+        <p>
+          <strong>Pseudo-elements</strong> let you style specific parts of
+          elements without adding extra HTML markup. They use double colons
+          (::).
+        </p>
+
+        <p class="pseudo-text">
+          This paragraph demonstrates ::first-letter and ::first-line
+          pseudo-elements. Notice how the first letter is larger and red, while
+          the entire first line is bold and dark blue. Try selecting this text
+          to see the ::selection pseudo-element in action with a yellow
+          highlight!
+        </p>
+      </section>
+
+      <!-- SECTION 8: pseudo-classes -->
+      <section>
+        <h2>8. Pseudo-classes</h2>
+        <p>
+          <strong>Pseudo-classes</strong> style elements based on their state or
+          user interaction. They use a single colon (:).
+        </p>
+
+        <!-- Input with placeholder and focus states -->
+        <p>
+          <label for="demo-input">Try clicking inside this input field:</label
+          ><br />
+          <input
+            type="text"
+            id="demo-input"
+            placeholder="Focus on me and see the border change!"
+          />
+        </p>
+
+        <!-- button with hover and active states -->
+        <p>
+          <button>Hover over me, then click me!</button>
+        </p>
+        <p>
+          <small>
+            Watch the button change colors as you hover and click. Orange ->
+            Blue (hover) -> Red (click)
+          </small>
+        </p>
+      </section>
+
+      <!-- SECTION 9: structural pseudo-classes -->
+      <section>
+        <h2>9. nth-child & Structural Pseudo-classes</h2>
+        <p>
+          <strong>Structural pseudo-classes</strong> target elements based on
+          their position in the parent. Very useful for styling lists, tables,
+          and menus!
+        </p>
+
+        <ul>
+          <li>First item : Green and bold (using :first-child)</li>
+          <li>Second item : Red and italic (using :nth-child(2))</li>
+          <li>Third item : Purple and underlined (using :last-child)</li>
+        </ul>
+
+        <p>
+          <small>
+            Each item is styled differently using structural pseudo-classes, no
+            extra classes needed in the HTML!
+          </small>
+        </p>
+      </section>
+      <section>
+        <table class="inline-table">
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+          </tr>
+        </table>
+        <table class="inline-table">
+          <tr>
+            <td>Cell A</td>
+            <td>Cell B</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Remember: The best way to learn CSS is to try it yourself.</h3>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .navbar {
+        background: #3498db;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      .sticky-nav {
+        position: sticky;
+        top: 0;
+      }
+
+      .section {
+        height: 1000px;
+        background: lightgray;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar sticky-nav">Sticky Navbar</nav>
+
+    <main>
+      <div class="section"></div>
+      <div class="section"></div>
+    </main>
+  </body>
+</html>
